@@ -11,7 +11,7 @@ class MP3Importer
    array = Dir.glob("#{path}/*.mp3").collect{|file| file.split(path+"/")[1]}
   end 
   
-  def import(file)
+  def import
     Song.new_by_filename(file)
    
 
